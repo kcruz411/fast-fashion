@@ -1,52 +1,201 @@
 <!DOCTYPE html>
-
+<!--Oceans -->
 <html>
+<link rel="icon" href="fakelogo.jpg" type="image/icon type">
+
+<center>
 
 <head>
-  <link rel="stylesheet" href="quiz.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu"
-  <title>The Impacts on Our Oceans</title>
+
+<title>Oceans</title>
+
+<!--Navbar-->
+				<div class="topnav">
+				  <a href="homepage.html">Home</a>
+					<div class="dropdown">
+					<button class="dropbtn">Impacts
+							<i class="fa fa-caret-down"></i>
+					</button>
+						<div class="dropdown-content">
+								<a href="workers.html">Workers</a>
+								<a href="#landfill.html">Landfill</a>
+								<a class="active" href="#cotton.html">Cotton</a>
+								<a href="#oceans">Oceans</a>
+						</div>
+					</div>
+					<div class="dropdown">
+					<button class="dropbtn">Solutions
+							<i class="fa fa-caret-down"></i>
+					</button>
+						<div class="dropdown-content">
+								<a href="#">Safe Clothing</a>
+								<a href="#">Donate</a>
+								<a href="#">What can you do?</a>
+						</div>
+					</div>
+					<a href="#">Quiz</a>
+					<a  href="#">About Us</a>
+				</div>
+
+<style>
+
+							.overflow_hidden {
+							    overflow: hidden;
+							}
+
+							.circle {
+							    border-radius: 50%;
+							}
+
+							.container {
+							    position: relative;
+							    width: 200px;
+							    height: 200px;
+							    border: 1px solid #0af;
+							}
+
+							.fill_container {
+							    position: absolute;
+							    left: 10%;
+							    bottom: 10%;
+							    width: 80%;
+							    height: 80%;
+							}
+
+							@keyframes fill {
+							    from { height: 0; }
+							    to { height: 90%; }
+							}
+							@keyframes fill2 {
+									from { height: 0; }
+									to { height: 20%; }
+							}
+							.fill_container .fill2 {
+									position: absolute;
+									bottom: 0;
+									background: #0af;
+									width: 100%;
+									height: 0;
+									animation-name: fill2;
+									animation-duration: 6s;
+									animation-iteration-count: infinite;
+								}
+							.fill_container .fill {
+							    position: absolute;
+							    bottom: 0;
+							    background: #0af;
+							    width: 100%;
+							    height: 0;
+							    animation-name: fill;
+							    animation-duration: 6s;
+							    animation-iteration-count: infinite;
+								}
+
+							.all{
+								display:inline-block;
+								margin-left: 6%;
+							}
+							.loading , .single-chart , .loading2{
+								float: left;
+								display:inline;
+							}
+
+
+
+
+</style>
+
+			<link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+			<link href="https://fonts.googleapis.com/css?family=Aldrich|Bungee+Hairline&display=swap" rel="stylesheet">
+
+			<link href='impacts.css' rel='stylesheet' type='text/css'>
+
+
+			<br>
+
+					<i>Oceans</i>
+
+					<br>
+
+
 
 </head>
 
 <body>
-  <center><h1>The Dying Oceans</h1><center>
+	<p>
 
-  <p>
-    Our oceans contain immense resources and animals. They are huge, encompassing 70% of the Earth's surface. In fact, we have explored more of the moon's surface
-    than the floor of the oceans. Even though the ocean is huge, it is also fragile, containing delicate ecosystems that need proper balance in order to continue.
-    Because of this, chemical disturbances lead to massive distrubances below the surface that negatively affect the whole ocean. In farms near bodies of water, chemicals
-    that are used on crops such as pesticides make their way into the water via run-off and have gone into the Gulf of Mexico, lowering oxygen levels and killing ecosystems in the oceans.
-    These are called "ocean dead zones", and are directly caused by farming materials used in fast fashion.
-  </p>
-  <img src = "deadzone.jpg">
 
-  <p>
-    Not many people know that a lot of our clothes are made from plastic. When these clothes are washed, thousands of plastic fibers go through the drains and end up
-    in the oceans. They are also less than 1/5 of an inch long, allowing them to slip through the filters at treatment plants.
+
+Our oceans contain immense resources and animals. They are huge, encompassing 70% of the Earth's surface. In fact, we have explored more of the moon's surface
+than the floor of the oceans. Even though the ocean is huge, it is also fragile, containing delicate ecosystems that need proper balance in order to continue.
+Because of this, chemical disturbances lead to massive distrubances below the surface that negatively affect the whole ocean. In farms near bodies of water, chemicals
+that are used on crops such as pesticides make their way into the water via run-off and have gone into the Gulf of Mexico, lowering oxygen levels and killing ecosystems in the oceans.
+These are called "ocean dead zones", and are directly caused by farming materials used in fast fashion.
+
+
   </p>
-  <img src = "microfiber.png" width = 300 height = 300>
-  <p>
-    Fast fashion accounts for more than a third of ocean microplastics. If you don't know yet, the problem with microplastics in the ocean is that marine animals mistake
-    them for food and ingest them. These have catastrophic effects on the animals, and destroys fragile ecosystems. For example, if a fish ingests a toxin from
-    the plastics, it could end up getting into the human body and cause illness if the human eats the fish. All in all, it is becoming more and more important
-    to pay attention to what clothes you buy and where you are buying them from.
-  </p>
-  <html>
-  <head>
-  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' type='text/javascript'></script>
-  <script type='text/javascript'>
-  $(document).ready(function(){
-      function setRandomWord(){
-          var phrases =new Array("YOU","US","THE WORLD");
-          $("#test").text(phrases[Math.floor(Math.random()*phrases.length)]);
-      }
-      setInterval(setRandomWord,1000);
-  });
-  </script>
-  </head>
-  <body>
-  <p><US>The Oceans Need <span id='test'>YOU</span> To Stop Buying Fast Fashion</US></p>
-  </body>
-  </html>
+
+	<br>
+
+
+<br>
+<div class = "all">
+			<div class="loading">
+			    <div class="container circle overflow_hidden">
+			        <div class="fill_container circle overflow_hidden">
+			            <div class="fill"></div>
+			        </div>
+			    </div>
+					<br>
+					<br>
+					<br>
+					<p>Waterways near garment factories in third-world<br> countries recieve <strong>90%</strong> of waste<br> water with no treatment.</p>
+			</div>
+
+
+			<div class="single-chart">
+				<svg viewbox="0 0 36 36" class="circular-chart green">
+					<path class="circle-bg"
+						d="M18 2.0845
+							a 15.9155 15.9155 0 0 1 0 31.831
+							a 15.9155 15.9155 0 0 1 0 -31.831"
+					/>
+					<path class="circle"
+						stroke-dasharray="42, 100"
+						d="M18 2.0845
+							a 15.9155 15.9155 0 0 1 0 31.831
+							a 15.9155 15.9155 0 0 1 0 -31.831"
+					/>
+				<text x="18" y="20.35" class="percentage">42%</text>
+					<p>After the dying and manufacturing of clothing, <strong>42%</strong> could be reused instead of immediate disposal.</p>
+				</svg>
+			</div>
+
+			<div class="loading2">
+					<div class="container circle overflow_hidden">
+							<div class="fill_container circle overflow_hidden">
+									<div class="fill2"></div>
+							</div>
+					</div>
+					<br>
+					<br>
+					<br>
+					<p>The fashion industry <br>produces more than <strong>20% </strong> of global waste water.</p>
+
+			</div>
+
+</div>
+
+<br>
+
+<img src = "fast-fashion-industry.jpg">
+
+</body>
+
+</center>
+
+</head>
