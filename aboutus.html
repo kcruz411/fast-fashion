@@ -7,6 +7,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<title>About Us</title>
 	<link rel="stylesheet" href="aboutus.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
 
 <div class="topnav">
   <a href="homepage.html">Home</a>
@@ -39,7 +43,30 @@
 
 <h1>About Us</h1>
 <center><hr width=25%></center>
-<img src="group.JPG" alt="group" width=75%>
+<div class="w3-content w3-section" style="max-width:500px; border:5px">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+	<img class="mySlides" src="32.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+	<img class="mySlides" src="4.jpg" style="width:100%">
+	<img class="mySlides" src="30.jpg" style="width:100%">
+	<img class="mySlides" src="5.jpg" style="width:100%">
+	<img class="mySlides" src="7.jpg" style="width:100%">
+	<img class="mySlides" src="8.jpg" style="width:100%">
+	<img class="mySlides" src="10.jpg" style="width:100%">
+	<img class="mySlides" src="20.png" style="width:100%">
+	<img class="mySlides" src="21.jpg" style="width:100%">
+	<img class="mySlides" src="27.jpg" style="width:100%">
+	<img class="mySlides" src="29.jpg" style="width:100%">
+	<img class="mySlides" src="34.jpg" style="width:100%">
+	<img class="mySlides" src="35.jpg" style="width:100%">
+	<img class="mySlides" src="6.jpg" style="width:100%">
+	<img class="mySlides" src="36.jpg" style="width:100%">
+	<img class="mySlides" src="37.png" style="width:100%">
+	<img class="mySlides" src="40.jpg" style="width:100%">
+	<img class="mySlides" src="31.jpg" style="width:100%">
+	<img class="mySlides" src="41.jpg" style="width:100%">
+	<img class="mySlides" src="42.jpg" style="width:100%">
+</div>
     <br>
     <br>
 
@@ -111,5 +138,22 @@ I’m a strong believer that coding and education can come together and I aspire
         probably biology or chemistry, and hopefully after graduation will follow a career path involved in STEM, such as research or development. </div>
   </div>
 </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 1000); // Change image every 2 seconds
+}
+</script>
 
 </center>
