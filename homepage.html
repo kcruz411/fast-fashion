@@ -2,6 +2,12 @@
 
 <html>
 
+<style>
+		footer {
+			background-color: #c7c7c7;
+		}
+</style>
+
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<title>Home</title>
@@ -41,22 +47,22 @@
 
 		<div class="main" id="section1">
 
-		<button><a href="#section2">Scroll to Bottom</a></button>
 
 		<h1>Fast Fashion</h1>
+
+		<br>
 
 		<h2>We believe sustainable clothing can change the world.</h2>
 
 	</div>
 
-	<div class="main" id="section2">
+
 
 		<body background="shirts.jpg" alt="shirts" width=100%>
 
-		<input type="button" value="Quick Links" onclick="showImage()"/>
 			<br>
 				<a href="you.html"><img id="loadingImage" src="help.png" style="visibility:hidden" width=17%></a>
-				<a href="#"><img id="loadingImage1" src="aboutUs.png" style="visibility:hidden" width=17%></a>
+				<a href="#aboutus.html"><img id="loadingImage1" src="aboutUs.png" style="visibility:hidden" width=17%></a>
 				<a href="donations.html"><img id="loadingImage2" src="donate.png" style="visibility:hidden" width=17%></a>
 		</br>
 
@@ -64,7 +70,7 @@
 	</center>
 </body>
 
-
+	<div class="main" id="section2">
 <script type="text/javascript">
     function showImage(){
         document.getElementById('loadingImage').style.visibility="visible";
@@ -89,6 +95,7 @@ $(document).ready(function(){
   });
 });
 </script>
+
 
 
 
