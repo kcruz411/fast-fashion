@@ -14,10 +14,7 @@
 
 }
 
-p{
-  font-family: 'Aldrich', sans-serif;
-}
-
-h1{
-  font-family: 'Aldrich', sans-serif;
+html {
+  height: 100%;
+	font-family: 'Ubuntu', sans-serif;
 }
