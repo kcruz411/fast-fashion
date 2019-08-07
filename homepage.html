@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 
 <html>
+<link rel="icon" href="logo.png" type="image/icon type">
+
+<style>
+		footer {
+			background-color: #c7c7c7;
+		}
+</style>
 
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -12,9 +19,9 @@
 <div class="topnav">
   <a class="active" href="homepage.html">Home</a>
 	<div class="dropdown">
-	<button class="dropbtn">Impacts
+	<div class="dropbtn">Impacts
 			<i class="fa fa-caret-down"></i>
-	</button>
+	</div>
 		<div class="dropdown-content">
 				<a href="workers.html">Workers</a>
 				<a href="landfill.html">Landfill</a>
@@ -23,73 +30,42 @@
 		</div>
 	</div>
 	<div class="dropdown">
-	<button class="dropbtn">Solutions
+	<div class="dropbtn">Solutions
 			<i class="fa fa-caret-down"></i>
-	</button>
+	</div>
 		<div class="dropdown-content">
 				<a href="links.html">Safe Clothing</a>
 				<a href="donations.html">Donate</a>
 				<a href="you.html">What can you do?</a>
 		</div>
 	</div>
-	<a href="#">Quiz</a>
-	<a  href="#">About Us</a>
+	<a href="quiz.html">Quiz</a>
+	<a  href="aboutus.html">About Us</a>
 </div>
 
 <body>
 	<center>
 
-		<div class="main" id="section1">
-
-		<button><a href="#section2">Scroll to Bottom</a></button>
-
 		<h1>Fast Fashion</h1>
+		<hr width=35%>
+
+		<br>
 
 		<h2>We believe sustainable clothing can change the world.</h2>
+		<a href="workers.html"><button>Get Started</button></a>
 
-	</div>
-
-	<div class="main" id="section2">
-
-		<body background="shirts.jpg" alt="shirts" width=100%>
-
-		<input type="button" value="Quick Links" onclick="showImage()"/>
 			<br>
-				<a href="you.html"><img id="loadingImage" src="help.png" style="visibility:hidden" width=17%></a>
-				<a href="#"><img id="loadingImage1" src="aboutUs.png" style="visibility:hidden" width=17%></a>
-				<a href="donations.html"><img id="loadingImage2" src="donate.png" style="visibility:hidden" width=17%></a>
+			<br>
+
+		<body background>
+
+				<a href="you.html"><img id="loadingImage" src="help.png" width=17%></a>
+				<a href="aboutus.html"><img id="loadingImage1" src="aboutUs.png" width=17%></a>
+				<a href="donations.html"><img id="loadingImage2" src="donate.png" width=17%></a>
 		</br>
 
-		</div>
+
 	</center>
 </body>
-
-
-<script type="text/javascript">
-    function showImage(){
-        document.getElementById('loadingImage').style.visibility="visible";
-				document.getElementById('loadingImage1').style.visibility="visible";
-				document.getElementById('loadingImage2').style.visibility="visible";
-    }
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-});
-</script>
-
-
 
 </html>
